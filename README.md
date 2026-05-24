@@ -56,34 +56,34 @@ JuegoRejillaC/
     ┌──────┴──────────────────────────────────────┐
     │                                             │
     ▼                                             ▼
-┌──────────────────────┐         ┌───────────────────────────┐
+┌──────────────────────┐         ┌────────────────────────────┐
 │      rejilla.h/c     │         │       jugador.h/c          │
-│──────────────────────│         │───────────────────────────│
+│──────────────────────│         │────────────────────────────│
 │ - filas: int         │         │ - id: int                  │
 │ - columnas: int      │         │ - nombre: char[]           │
 │ - totalPuntos: int   │         │ - esTurnoActual: int       │
 │ - conexiones[][]     │         │ - candidatas[]: Jugada     │
 │ - lock: omp_lock_t   │         │ - totalCandidatas: int     │
-│──────────────────────│         │───────────────────────────│
+│──────────────────────│         │────────────────────────-───│
 │ + rejilla_init()     │         │ + jugador_init()           │
 │ + esConexionValida() │         │ + jugador_activar()        │
 │ + estaLibre()        │         │ + jugador_desactivar()     │
 │ + conectar()         │         │ + jugador_agregarCandidata │
 │ + hayJugadasDisp()   │         │ + jugador_limpiarCandidatas│
 │ + tieneCurvaCerrada()│         │ + jugador_imprimirNombre() │
-│ + rejilla_imprimir() │         └───────────────────────────┘
+│ + rejilla_imprimir() │         └────────────────────────────┘
 │ + rejilla_destruir() │
 └──────────────────────┘
 
-┌──────────────────────┐         ┌───────────────────────────┐
+┌──────────────────────┐         ┌────────────────────────────┐
 │      jugada.h/c      │         │       medidor.h/c          │
-│──────────────────────│         │───────────────────────────│
+│──────────────────────│         │────────────────────────────│
 │ - puntoA: int        │         │ - tiempoInicio: double     │
 │ - puntoB: int        │         │ - tiempoFin: double        │
 │ - jugadorId: int     │         │ - tiemposPorTurno[]        │
 │──────────────────────│         │ - totalJugadas: int        │
 │ + crearJugada()      │         │ - numeroHilos: int         │
-└──────────────────────┘         │───────────────────────────│
+└──────────────────────┘         │────────────────────────────│
                                  │ + medidor_init()           │
 ┌──────────────────────┐         │ + medidor_iniciar()        │
 │     validador.h/c    │         │ + medidor_finalizar()      │
@@ -91,7 +91,7 @@ JuegoRejillaC/
 │ + validarParametros()│         │ + medidor_getTiempoTotalMs │
 └──────────────────────┘         │ + medidor_getThroughput()  │
                                  │ + medidor_imprimirReporte()│
-                                 └───────────────────────────┘
+                                 └────────────────────────────┘
 ```
 
 ---
