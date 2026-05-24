@@ -239,6 +239,7 @@ bin\juego.exe 3 3 2 1
 ## 📈 Métricas de Rendimiento
 
 Al finalizar cada partida se imprime un reporte:
+
 <img width="369" height="168" alt="image" src="https://github.com/user-attachments/assets/1c11ac89-77eb-41c7-b56e-72f9e0add3b0" />
 
 ### Análisis de escalabilidad recomendado
