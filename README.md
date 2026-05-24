@@ -239,18 +239,7 @@ bin\juego.exe 3 3 2 1
 ## 📈 Métricas de Rendimiento
 
 Al finalizar cada partida se imprime un reporte:
-
-```
-╔══════════════════════════════════════╗
-║      REPORTE DE RENDIMIENTO          ║
-╠══════════════════════════════════════╣
-║  Hilos configurados  : 3             ║
-║  Total jugadas       : 20            ║
-║  Tiempo total (ms)   : 75.000        ║
-║  Promedio/turno (ms) : 0.450         ║
-║  Throughput (j/s)    : 266.67        ║
-╚══════════════════════════════════════╝
-```
+<img width="369" height="168" alt="image" src="https://github.com/user-attachments/assets/1c11ac89-77eb-41c7-b56e-72f9e0add3b0" />
 
 ### Análisis de escalabilidad recomendado
 
@@ -269,21 +258,8 @@ Comparar el throughput resultante para analizar el impacto del paralelismo OpenM
 
 ## 📁 Visualización del Tablero
 
-```
-  ( 0)─────( 1)─────( 2)─────( 3)
-    │         │         │         │
-    │         │         │         │
-    │         │         │         │
-  ( 4)─────( 5)─────( 6)─────( 7)
-    │         │         │         │
-    │         │         │         │
-    │         │         │         │
-  ( 8)─────( 9)─────(10)─────(11)
-    │         │         │         │
-    │         │         │         │
-    │         │         │         │
-  (12)─────(13)─────(14)─────(15)
-```
+<img width="826" height="824" alt="image" src="https://github.com/user-attachments/assets/ea42f36b-223d-4ef4-9550-807a8463dd37" />
+
 
 Las conexiones ocupadas se muestran en el color del jugador:
 - Horizontales ocupadas: `═════` en color del jugador
